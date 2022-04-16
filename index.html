@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html data-theme="forest" lang="en">
+<html id="htmlTag" data-theme="forest" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joey Bennett's Web Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
     <header>
@@ -22,6 +23,9 @@
             </div>
             <div class="flex-1">
               <a class="btn btn-ghost normal-case text-xl">joey bennett</a>
+            </div>
+            <div class="flex justify-end">
+                <a id="themeBtn" class="btn btn-ghost"><img id="themeBtnImg" src="/assets/gardenMode.png"></a>
             </div>
           </div>
     </header>
@@ -62,4 +66,6 @@
     
 </body>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
 </html>
