@@ -76,12 +76,8 @@ function displayProjects() {
         var tempCardEl = $('<div class="card lg:card-side bg-neutral shadow-xl m-6">');
         projectsContainer.append(tempCardEl);
 
-        var tempCardFigure = $('<figure>');
+        var tempCardFigure = $("<figure class='bg-cover h-96 bg-center' style='background-image: url(\"" + projects[i].media + "\");'</figure>");
         tempCardEl.append(tempCardFigure);
-
-        var tempCardImg = $('<img src=' + projects[i].media +  ' alt="' + projects[i].name + ' ">');
-        tempCardImg.addClass("projectGif");
-        tempCardFigure.append(tempCardImg);
 
         var tempCardBodyEl = $('<div class="card-body">');
         tempCardEl.append(tempCardBodyEl);
@@ -96,8 +92,14 @@ function displayProjects() {
         var tempCardButtonDivEl = $('<div class="card-actions justify-end">');
         tempCardBodyEl.append(tempCardButtonDivEl);
 
-        var tempCardButtonEl = $('<button class="btn btn-primary">');
-        tempCardButtonEl.text('More');
-        tempCardButtonDivEl.append(tempCardButtonEl);
+        var tempCardButton1El = $('<a target="_blank" class="btn btn-primary">');
+        tempCardButton1El.attr('href', projects[i].gitHubUrl);
+        tempCardButton1El.text('view repo');
+        tempCardButtonDivEl.append(tempCardButton1El);
+
+        var tempCardButton2El = $('<a target="_blank" class="btn btn-primary">');
+        tempCardButton2El.attr('href', projects[i].deployedUrl);
+        tempCardButton2El.text('view app');
+        tempCardButtonDivEl.append(tempCardButton2El);
     }
 }
