@@ -106,4 +106,5 @@ function displayProjects() {
         tempCardButton2El.text('view app');
         tempCardButtonDivEl.append(tempCardButton2El);
     }
+    ScrollReveal().reveal('.card');
 }
