@@ -1,4 +1,19 @@
-#themeBtnImg {
+.leafIcon {
+    width: 32px;
+    height: 32px;
+}
+
+#twitterIcon {
+    width: 32px;
+    height: 32px;
+}
+
+#githubIcon {
+    width: 32px;
+    height: 32px;
+}
+
+#linkedinIcon {
     width: 32px;
     height: 32px;
 }
