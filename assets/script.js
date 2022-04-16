@@ -73,7 +73,7 @@ function changeTheme() {
 function displayProjects() {
 
     for (var i = 0; i < projects.length; i++) {
-        var tempCardEl = $('<div class="card lg:card-side bg-neutral shadow-xl m-6">');
+        var tempCardEl = $('<div class="card bg-neutral w-96 m-6">');
         projectsContainer.append(tempCardEl);
 
         var tempCardFigure = $("<figure class='bg-cover h-96 bg-center' style='background-image: url(\"" + projects[i].media + "\");'</figure>");
