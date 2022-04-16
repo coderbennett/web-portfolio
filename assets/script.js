@@ -5,6 +5,7 @@ var twitterIconEl = $('#twitterIcon');
 var githubIconEl = $('#githubIcon');
 var linkedinIconEl = $('#linkedinIcon');
 var projectsContainer = $('#projects');
+var heroEl = $('.hero');
 
 var theme = htmlEl.attr('data-theme');
 
@@ -47,6 +48,7 @@ themeLeafIcons.attr('src', "./assets/" + theme + "/leafIcon.png");
 twitterIconEl.attr('src', "./assets/" + theme + "/twitterIcon.png");
 githubIconEl.attr('src', "./assets/" + theme + "/githubIcon.png");
 linkedinIconEl.attr('src', "./assets/" + theme + "/linkedinIcon.png");
+heroEl.css('background-image', 'url("./assets/' + theme + '/background.png")');
 
 themeBtn.on("click", changeTheme);
 
@@ -57,6 +59,7 @@ function changeTheme() {
         twitterIconEl.attr('src', "./assets/garden/twitterIcon.png");
         githubIconEl.attr('src', "./assets/garden/githubIcon.png");
         linkedinIconEl.attr('src', "./assets/garden/linkedinIcon.png");
+        heroEl.css('background-image', "url('./assets/garden/background.png')");
         console.log('button pressed, changed to garden theme')
     } else {
         htmlEl.attr('data-theme', "forest");
@@ -64,6 +67,7 @@ function changeTheme() {
         twitterIconEl.attr('src', "./assets/forest/twitterIcon.png");
         githubIconEl.attr('src', "./assets/forest/githubIcon.png");
         linkedinIconEl.attr('src', "./assets/forest/linkedinIcon.png");
+        heroEl.css('background-image', "url('./assets/forest/background.png')");
         console.log('button pressed, changed to forest theme')
     }
     theme = htmlEl.attr('data-theme');
