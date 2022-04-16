@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="forest" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joey Bennett's Web Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>about</a></li>
+                <li><a>portfolio</a></li>
+                <li><a>resume</a></li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">joey bennett</a>
+            </div>
+          </div>
+    </header>
+    <div class="hero min-h-screen" style="background-image: url(./assets/background.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Welcome!</h1>
+            <p class="mb-5">My name is joey. I'm a web developer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-around my-12"> 
+
+        <div class="card w-96 bg-neutral shadow-xl mx-3">
+            <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-96 bg-primary text-primary-content mx-3">
+            <div class="card-body">
+              <h2 class="card-title">Card title!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
     
 </body>
+    <script src="https://cdn.tailwindcss.com"></script>
 </html>
