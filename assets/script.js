@@ -2,7 +2,7 @@ var themeBtn = $('#themeBtn');
 var themeBtnImg = $('#themeBtnImg');
 var htmlEl = $('#htmlTag');
 
-var theme;
+var theme = htmlEl.attr('data-theme');
 
 if(localStorage.getItem("theme") === null) {
     localStorage.setItem("theme", theme);
