@@ -19,13 +19,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </label>
               <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="#aboutCard">about</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a>resume</a></li>
+                <li><a class="text-primary" href="#aboutHeader">about</a></li>
+                <li><a class="text-primary" href="#projectsHeader">projects</a></li>
+                <li><a class="text-primary">resume</a></li>
               </ul>
             </div>
             <div class="flex-1">
-              <a href="#joeyCard" class="btn btn-ghost normal-case text-xl">joey bennett</a>
+              <a href="#hero" class="btn btn-ghost text-primary normal-case text-xl">joey bennett</a>
             </div>
             <div class="flex justify-end">
                 <a id="themeBtn" class="btn btn-ghost"><img class="leafIcon" src="/assets/gardenMode.png"></a>
@@ -36,7 +36,7 @@
 
     <section id="about">
 
-        <div class="hero min-h-screen">
+        <div id="hero" class="hero min-h-screen">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -45,10 +45,12 @@
               </div>
             </div>
           </div>
+
+          <h2 id="aboutHeader" class="ml-16 my-6 text-3xl font-bold text-primary">About</h2>
     
           <div class="flex flex-wrap justify-around my-12"> 
     
-            <div id="joeyCard" class="card w-96 bg-neutral shadow-xl my-3 mx-3">
+            <div class="card w-96 bg-neutral shadow-xl my-3 mx-3">
                 <div class="card-body text-neutral-content">
                     <h2 class="card-title">Joey Bennett</h2>
                     <p>photo of joey</p>
@@ -59,13 +61,12 @@
                 </div>
             </div>
     
-            <div id="aboutCard" class="card w-96 bg-primary text-primary-content my-3 mx-3">
+            <div class="card w-96 bg-primary text-primary-content my-3 mx-3">
                 <div class="card-body">
-                  <h2 class="card-title">About</h2>
-                  <p>I've been developing web apps for over 8 months, using technologies like jQuery, Bootstrap, Tailwind, Moment.js and many more third party APIs. Below this section you can find projects I have worked on recently.</p>
+                  <p>I've been developing web apps for over 8 months, using technologies like jQuery, Bootstrap, Tailwind, Moment.js along with other third party APIs. Below this section you can find projects I have worked on recently.</p>
                   <div class="card-actions justify-around mt-6">
                     <a href="https://www.linkedin.com/in/joey-bennett-jkb/" target="_blank" class="btn btn-neutral">View LinkedIn</a>
-                    <a href="#projects" class="btn btn-neutral">View Projects</a>
+                    <a href="#projectsHeader" class="btn btn-neutral">View Projects</a>
                   </div>
                 </div>
               </div>
@@ -73,28 +74,29 @@
 
     </section>
 
+    <h2 id="projectsHeader" class="ml-16 mb-6 text-3xl font-bold text-primary">Projects</h2>
 
-      <section id="projects" class="flex flex-wrap justify-around">
+    <section id="projects" class="flex flex-wrap justify-around">
 
-      </section>
+    </section>
 
-      <footer class="footer items-center p-4 bg-neutral text-neutral-content">
-        <div class="items-center grid-flow-col">
-            <img class="leafIcon" src="./assets/garden/leafIcon.png">
-            <p>Copyright © 2022 - All rights reserved</p>
-        </div> 
-        <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-            <a href="https://twitter.com/joeykalanchoe" target="_blank" class="btn btn-ghost">
-                <img id="twitterIcon" src="./assets/garden/twitterIcon.png">
-            </a> 
-            <a href="https://github.com/coderbennett" target="_blank" class="btn btn-ghost">
-                <img id="githubIcon" src="./assets/garden/githubIcon.png">
-            </a>
-            <a href="https://www.linkedin.com/in/joey-bennett-jkb/" target="_blank" class="btn btn-ghost">
-                <img id="linkedinIcon" src="./assets/garden/linkedinIcon.png">
-            </a>
-        </div>
-      </footer>
+    <footer class="footer items-center p-4 bg-neutral text-neutral-content">
+    <div class="items-center grid-flow-col">
+        <img class="leafIcon" src="./assets/garden/leafIcon.png">
+        <p>Copyright © 2022 - All rights reserved</p>
+    </div> 
+    <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://twitter.com/joeykalanchoe" target="_blank" class="btn btn-ghost">
+            <img id="twitterIcon" src="./assets/garden/twitterIcon.png">
+        </a> 
+        <a href="https://github.com/coderbennett" target="_blank" class="btn btn-ghost">
+            <img id="githubIcon" src="./assets/garden/githubIcon.png">
+        </a>
+        <a href="https://www.linkedin.com/in/joey-bennett-jkb/" target="_blank" class="btn btn-ghost">
+            <img id="linkedinIcon" src="./assets/garden/linkedinIcon.png">
+        </a>
+    </div>
+    </footer>
     
 </body>
     <script src="https://cdn.tailwindcss.com"></script>
