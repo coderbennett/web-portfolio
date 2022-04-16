@@ -2,6 +2,16 @@ var themeBtn = $('#themeBtn');
 var themeBtnImg = $('#themeBtnImg');
 var htmlEl = $('#htmlTag');
 
+var theme;
+
+if(localStorage.getItem("theme") === null) {
+    localStorage.setItem("theme", theme);
+}
+
+theme = localStorage.getItem("theme");
+htmlEl.attr('data-theme', theme);
+themeBtnImg.attr('src', "./assets/" + theme + "Mode.png");
+
 themeBtn.on("click", changeTheme);
 
 function changeTheme() {
@@ -14,4 +24,6 @@ function changeTheme() {
         themeBtnImg.attr('src', "./assets/gardenMode.png");
         console.log('button pressed, changed to forest theme')
     }
+    theme = htmlEl.attr('data-theme');
+    localStorage.setItem("theme", theme);
 }
