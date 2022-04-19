@@ -9,6 +9,8 @@ var heroEl = $('.hero');
 
 var theme = htmlEl.attr('data-theme');
 
+//this is the projects array, to add more projects to this page
+//just simply add more projects to the array
 var projects = [ {
     name: "PetHub",
     gitHubUrl: "https://github.com/coderbennett/pethub",
@@ -36,12 +38,15 @@ var projects = [ {
 }
 ];
 
+//the display projects function displays all the projects onto cards
 displayProjects();
 
+//if there is no locally stored theme, set the current to it
 if(localStorage.getItem("theme") === null) {
     localStorage.setItem("theme", theme);
 }
 
+//set all the themed content to the correct theme
 theme = localStorage.getItem("theme");
 htmlEl.attr('data-theme', theme);
 themeLeafIcons.attr('src', "./assets/" + theme + "/leafIcon.png");
@@ -50,8 +55,10 @@ githubIconEl.attr('src', "./assets/" + theme + "/githubIcon.png");
 linkedinIconEl.attr('src', "./assets/" + theme + "/linkedinIcon.png");
 heroEl.css('background-image', 'url("./assets/' + theme + '/background.png")');
 
+//set up the event listener if someone changes the theme
 themeBtn.on("click", changeTheme);
 
+//this function swaps the themed elements from one to the other
 function changeTheme() {
     if (htmlEl.attr('data-theme') === "forest") {
         htmlEl.attr('data-theme', "garden");
@@ -74,6 +81,8 @@ function changeTheme() {
     localStorage.setItem("theme", theme);
 }
 
+//the display projects function creates card elements with buttons,
+//an image, a title and description
 function displayProjects() {
 
     for (var i = 0; i < projects.length; i++) {
@@ -106,5 +115,6 @@ function displayProjects() {
         tempCardButton2El.text('view app');
         tempCardButtonDivEl.append(tempCardButton2El);
     }
+    //with the scroll reveal function here we apply it to all the cards
     ScrollReveal().reveal('.card');
 }
