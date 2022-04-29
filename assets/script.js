@@ -35,6 +35,12 @@ var projects = [ {
     deployedUrl: "https://coderbennett.github.io/word-guess/",
     description: "This game gives you a random word and it is up to you to type the word before the time runs out!",
     media: "./assets/media/wordGuess.gif"
+}, {
+    name: "Project ASTEROID",
+    gitHubUrl: "https://github.com/coderbennett/Project-ASTEROID",
+    deployedUrl: "https://github.com/coderbennett/Project-ASTEROID",
+    description: "My small but first game. Protect earth from asteroids while farming them for resources! Try to get your best high score!",
+    media: "./assets/media/projectA.gif"
 }
 ];
 
